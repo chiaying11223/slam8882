@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gds69888.com/sitemap.xml
