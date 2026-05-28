@@ -432,6 +432,39 @@ footer{
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s}
 .reveal.in{opacity:1;transform:none}
+
+/* ============ GUILD ============ */
+.guild-section{padding:80px 0;background:linear-gradient(180deg,rgba(30,20,70,.35),transparent)}
+.guild-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.guild-label{font-family:"Cinzel",serif;letter-spacing:.4em;font-size:12px;color:#9cb8ff;text-transform:uppercase;margin-bottom:14px}
+.guild-title{font-family:"Noto Serif TC",serif;font-size:clamp(26px,4vw,38px);font-weight:900;color:#fff;line-height:1.3;margin-bottom:16px}
+.guild-title .accent{color:#ffd166}
+.guild-desc{color:#b6bee0;font-size:15px;line-height:1.9;margin-bottom:26px}
+.guild-perks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px}
+.guild-perks li{display:flex;align-items:flex-start;gap:10px;color:#c8d0ee;font-size:14px;line-height:1.6}
+.guild-perks li::before{content:"✦";color:#ffd166;font-size:10px;margin-top:5px;flex-shrink:0}
+.guild-card{background:linear-gradient(135deg,rgba(91,55,196,.2),rgba(35,98,210,.12));border:1px solid rgba(120,140,220,.3);border-radius:16px;padding:36px 28px;text-align:center}
+.guild-card-num{font-family:"Cinzel",serif;font-size:46px;font-weight:900;background:linear-gradient(180deg,#ffd166,#e6a400);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.guild-card-label{color:#9cb8ff;font-size:13px;letter-spacing:.1em;margin-top:8px;margin-bottom:24px}
+.guild-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.guild-stat{background:rgba(20,26,60,.6);border:1px solid rgba(120,140,220,.2);border-radius:10px;padding:16px 12px;text-align:center}
+.guild-stat-n{font-family:"Cinzel",serif;font-size:20px;font-weight:900;color:#ffd166}
+.guild-stat-l{color:#7a88b8;font-size:12px;margin-top:4px}
+
+/* ============ FAQ ============ */
+.faq-section{padding:80px 0}
+.faq-list{margin-top:44px;display:grid;gap:10px}
+.faq-item{background:linear-gradient(180deg,rgba(30,38,82,.5),rgba(18,22,52,.7));border:1px solid rgba(120,140,220,.22);border-radius:10px;overflow:hidden;transition:border-color .25s}
+.faq-item[open]{border-color:rgba(255,209,102,.4)}
+.faq-item summary{list-style:none;font-weight:700;font-size:.95rem;color:#e6e9ff;cursor:pointer;padding:20px 52px 20px 24px;position:relative;display:block}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);color:#ffd166;font-size:1.4rem;line-height:1;transition:transform .3s}
+.faq-item[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq-item .ans{font-size:.9rem;color:#9cb8ff;line-height:1.85;padding:0 24px 20px}
+@media(max-width:880px){
+  .guild-inner{grid-template-columns:1fr;gap:36px}
+  .guild-card{max-width:420px;margin:0 auto;width:100%}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "大滿貫娛樂城", "url": "https://gds69888.com/", "sameAs": ["https://line.me/R/ti/p/@slam888"]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "大滿貫娛樂城", "url": "https://gds69888.com/"}</script>
 </head><body>
@@ -508,6 +541,59 @@ footer{
 <a href="article-1716-2.html" class="read-more">點這裡看</a>
 </div></article></div>
 </div></section>
+
+<!-- 公會 -->
+<section class="guild-section">
+  <div class="wrap">
+    <div class="guild-inner">
+      <div>
+        <div class="guild-label">GUILD</div>
+        <h2 class="guild-title">加入<span class="accent">大滿貫公會</span><br>每天領回饋</h2>
+        <p class="guild-desc">大滿貫公會是官方認可的玩家社群，加入後每天簽到、邀請朋友、領紅包，累積活躍度還能享有更高回分比例，讓每一局都更有價值。</p>
+        <ul class="guild-perks">
+          <li>每日簽到領點數</li>
+          <li>邀請新玩家加碼獎勵</li>
+          <li>公會紅包不定期派發</li>
+          <li>活躍度達標提升回分</li>
+          <li>專屬攻略情報優先看</li>
+          <li>LINE 群即時互動交流</li>
+        </ul>
+        <a href="https://line.me/R/ti/p/@slam888" class="btn btn-primary" target="_blank" rel="noopener">立即加入公會</a>
+      </div>
+      <div class="guild-card reveal">
+        <div class="guild-card-num">35萬</div>
+        <div class="guild-card-label">新手加入即送點數</div>
+        <div class="guild-stats">
+          <div class="guild-stat"><div class="guild-stat-n">24H</div><div class="guild-stat-l">LINE 客服</div></div>
+          <div class="guild-stat"><div class="guild-stat-n">100+</div><div class="guild-stat-l">款遊戲</div></div>
+          <div class="guild-stat"><div class="guild-stat-n">免費</div><div class="guild-stat-l">加入無門檻</div></div>
+          <div class="guild-stat"><div class="guild-stat-n">即玩</div><div class="guild-stat-l">免下載登入</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">FAQ</div>
+      <h2 class="sec-title">常見<span class="accent">問題</span></h2>
+      <div class="sec-divider"></div>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item"><summary>大滿貫娛樂城主要有哪些遊戲？</summary><div class="ans">平台整合魚機、老虎機與麻將機台三大類型，每款機台有不同波動與賠率特色，玩家可依喜好與預算自由選擇，每週持續更新新機台。</div></details>
+      <details class="faq-item"><summary>新手如何開始玩？</summary><div class="ans">加入 LINE 官方帳號即可馬上領取 35 萬點體驗金，不需先存錢、不需先註冊，直接開玩，整個流程不超過 3 分鐘。</div></details>
+      <details class="faq-item"><summary>大滿貫公會有什麼好處？</summary><div class="ans">加入公會後可每天簽到領點數、邀請朋友獲得加碼獎勵，活躍度達標還能享有更高回分比例，不定期發放公會紅包福利。</div></details>
+      <details class="faq-item"><summary>大滿貫回分機制怎麼計算？</summary><div class="ans">依玩家投注金額與活動條件計算，達標後獲得對應比例回饋。不同活動期間比例可能調整，建議留意官方 LINE 公告。</div></details>
+      <details class="faq-item"><summary>需要下載 APP 才能玩嗎？</summary><div class="ans">不需要，採用免下載設計，手機或電腦瀏覽器直接登入即可，支援 iOS 與 Android，隨時隨地都能玩。</div></details>
+      <details class="faq-item"><summary>如何聯繫大滿貫官方客服？</summary><div class="ans">透過頁面上的 LINE 按鈕聯繫官方客服，24 小時都有人回應，建議勿透過非官方管道，以避免假客服詐騙風險。</div></details>
+      <details class="faq-item"><summary>大滿貫支援電腦版嗎？</summary><div class="ans">支援，透過電腦瀏覽器直接開啟，免安裝任何程式，畫面更大、操作更流暢，適合長時間遊玩。</div></details>
+      <details class="faq-item"><summary>大滿貫換台幣流程如何進行？</summary><div class="ans">需依官方規範提出申請，完成審核後依流程兌換。活躍度與回分活動達標也可能影響可參與的優惠內容，詳情請洽客服。</div></details>
+    </div>
+  </div>
+</section>
 
 <section class="cta-strip">
   <div class="wrap">
